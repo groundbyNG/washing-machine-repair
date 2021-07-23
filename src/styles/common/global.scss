@@ -1,0 +1,30 @@
+@import "../../local_modules/normalize.css/normalize";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Montserrat Light";
+    letter-spacing: 0.07rem;
+}
+
+body {
+    margin: 0;
+    padding: 4rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding-wrapper {
+  padding: 0 5.25rem;
+}
