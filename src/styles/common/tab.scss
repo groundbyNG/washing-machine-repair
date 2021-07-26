@@ -30,9 +30,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: bold;
         font-size: 18px;
-        color: $secondary;
         padding: 14px 0;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -112,6 +110,7 @@
     @include tabs {
       > label {
         cursor: default;
+        font-weight: bold;
         color: $black;
 
         svg {

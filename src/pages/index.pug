@@ -11,32 +11,32 @@ block content
       input(type="radio" name="tab-control" id="tab5")
 
       ul(class="tabs__header" role="tablist")
-        li
-          label(for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0")
+        li(role="tab" aria-selected="true")
+          label(for="tab1" aria-controls="panel1" tabindex="0")
             span ТЭН
-            img(src="../img/heater-icon.png")
-        li
-          label(for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0")
+            img(src="../img/heater-icon.png" alt="тэн")
+        li(role="tab" aria-selected="false")
+          label(for="tab2" aria-controls="panel2" tabindex="0")
             span Насос
-            img(src="../img/pump-icon.png")
-        li
-          label(for="tab3" role="tab" aria-selected="false" aria-controls="panel3" tabindex="0")
+            img(src="../img/pump-icon.png" alt="насос")
+        li(role="tab" aria-selected="false")
+          label(for="tab3" aria-controls="panel3" tabindex="0")
             span Щетки
-            img(src="../img/brush-icon.png")
-        li
-          label(for="tab4" role="tab" aria-selected="false" aria-controls="panel4" tabindex="0")
+            img(src="../img/brush-icon.png" alt="щетка")
+        li(role="tab" aria-selected="false")
+          label(for="tab4" aria-controls="panel4" tabindex="0")
             span Подшипники
-            img(src="../img/bear-icon.png")
-        li
-          label(for="tab5" role="tab" aria-selected="false" aria-controls="panel5" tabindex="0")
+            img(src="../img/bear-icon.png" alt="подшипник")
+        li(role="tab" aria-selected="false")
+          label(for="tab5" aria-controls="panel5" tabindex="0")
             span Другие услуги
-            img(src="../img/more-icon.svg")
+            img(src="../img/more-icon.svg" alt="другое")
       div.slider
         div.indicator
       div.content
         section
           h3 Замена ТЭНа
-          div(id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false")
+          div(id="panel1" class="tab-content" role="tabpanel" aria-labelledby="panel1" aria-hidden="false")
             p Причины неисправности ТЭНа могут быть разными. Самые частые случаи это
             ul
               li Стиральная машинка не нагревает воду
@@ -45,7 +45,7 @@ block content
             p Как правило в подобных случаях следует произвести замену ТЭНа.
         section
           h3 Замена насоса
-          div(id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true")
+          div(id="panel2" class="tab-content" role="tabpanel" aria-labelledby="panel2" aria-hidden="true")
             p Самые распространенные случаи неисправности сливного насоса (помпы)
             ul
               li Стиральная машинка не сливает воду
@@ -55,14 +55,14 @@ block content
             p В таких случаях чаще всего требуется замена сливного насоса, однако в некоторых ситуациях достаточно прочистить фильтр сливного насоса.
         section
           h3 Замена щеток электродвигателя
-          div(id="tab-content3" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true")
+          div(id="panel3" class="tab-content" role="tabpanel" aria-labelledby="panel3" aria-hidden="true")
             p Замена щеток производится ТОЛЬКО в двигателях с ременным приводом. В двигателях с прямым приводом замену производить НЕ надо.
             p Самые частые проблемы, связанные с заменой щеток, происходят когда машинка не крутит барабан.
         section
           h3 Замена подшипникового узла (замена подшипников)
-          div(id="tab-content4" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true")
+          div(id="panel4" class="tab-content" role="tabpanel" aria-labelledby="panel4" aria-hidden="true")
             p При стирке владельцы стиральных машин могут слышать грохот во время отжима. В случае, где протекает сальник и вода попадает в подшипники это частая проблема. Излечить такой недуг следует заменой подшипникового узла.
         section
           h3 Другие услуги
-          div(id="tab-content5" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true")
+          div(id="panel5" class="tab-content" role="tabpanel" aria-labelledby="panel5" aria-hidden="true")
             p Выше перечислены самые распространенные поломки в стиральных машинах автомат. Очень часто возникают проблемы, которые нельзя определить по телефону или со слов клиента. В таких случаях стоит позвонить нам и мы решим ваши проблемы со стиральными машинами в кратчайшие сроки.
