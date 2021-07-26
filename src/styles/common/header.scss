@@ -1,7 +1,7 @@
 @import "../mixins/media";
 
 header {
-  height: 100vh;
+  height: calc(100vh - 4rem);
 
   &::before {
     content: "";
@@ -100,17 +100,17 @@ header {
       color: $white;
       counter-increment: inst;
 
-      &:before {
+      &::before {
         content: "0" counter(inst);
         position: absolute;
         top: -3.25rem;
         left: 0;
         width: 100%;
-        border-bottom: .25rem $white solid;
+        border-bottom: 0.25rem $white solid;
         font-size: 2rem;
       }
 
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         top: 0;

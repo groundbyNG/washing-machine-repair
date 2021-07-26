@@ -8,7 +8,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat", "Arial", "Verdana", "Tahoma", sans-serif;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.07rem;
@@ -25,6 +25,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+main {
+  margin: 4rem 0 2rem 0;
 }
 
 .padding-wrapper {

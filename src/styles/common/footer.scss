@@ -1,3 +1,89 @@
-.footer {
-  border: 1px solid red;
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .header-container {
+    margin-left: 25%;
+  }
+
+  h2 {
+    margin: 0;
+    line-height: 3rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+    &:first-of-type {
+      margin-left: 2rem;
+    }
+
+    &:last-of-type {
+      margin-left: 4rem;
+    }
+  }
+
+  .contact-number {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .contact-icon {
+      width: 9rem;
+      height: 9rem;
+      padding: 3rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .separator {
+      border-right: 0.1rem $black solid;
+    }
+
+    span {
+      color: $black;
+      font-size: 1.5rem;
+      margin: auto 0 auto 3rem;
+      border-bottom: 0.1rem solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .contact-icon {
+        filter: invert(38%) sepia(95%) saturate(393%) hue-rotate(87deg) brightness(94%) contrast(83%);
+      }
+
+      span {
+        border-color: $black;
+      }
+    }
+  }
+
+  .img-container {
+    position: relative;
+    max-width: 40rem;
+    padding: 5rem;
+
+    img {
+      border: 1rem $black solid;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .front {
+    position: absolute;
+    bottom: 10rem;
+    left: 0;
+    z-index: 2;
+  }
+
+  .back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }

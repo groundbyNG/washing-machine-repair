@@ -8,7 +8,8 @@
     "stylelint-config-htmlacademy"
   ],
   "rules": {
-    "indentation": 4,
+    "indentation": 2,
+    "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "at-rule-empty-line-before": "always",
     "scss/selector-no-redundant-nesting-selector": true,
@@ -28,7 +29,10 @@
       "vh",
       "vm",
       "vmax",
-      "vmin"
+      "vmin",
+      "s",
+      "fr",
+      "deg"
     ]
   }
 }

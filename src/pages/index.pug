@@ -1,7 +1,7 @@
 extends common/layout
 
 block content
-  main.main.padding-wrapper
+  main.main.padding-wrapper(id="services")
     h2  Оказываемые услуги
     div.tabs
       input(type="radio" name="tab-control" id="tab1" checked)
@@ -14,22 +14,23 @@ block content
         li
           label(for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0")
             span ТЭН
-            img(src="../img/heater-icon.png" class="icon")
+            img(src="../img/heater-icon.png")
         li
           label(for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0")
             span Насос
-            img(src="../img/pump-icon.png" class="icon")
+            img(src="../img/pump-icon.png")
         li
           label(for="tab3" role="tab" aria-selected="false" aria-controls="panel3" tabindex="0")
             span Щетки
-            img(src="../img/brush-icon.png" class="icon")
+            img(src="../img/brush-icon.png")
         li
           label(for="tab4" role="tab" aria-selected="false" aria-controls="panel4" tabindex="0")
             span Подшипники
-            img(src="../img/bear-icon.png" class="icon")
+            img(src="../img/bear-icon.png")
         li
           label(for="tab5" role="tab" aria-selected="false" aria-controls="panel5" tabindex="0")
             span Другие услуги
+            img(src="../img/more-icon.svg")
       div.slider
         div.indicator
       div.content
