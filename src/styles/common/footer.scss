@@ -90,6 +90,22 @@ footer {
   .mobile-contact-container {
     display: none;
   }
+
+  .author {
+    display: block;
+    padding: 1rem;
+    color: $black;
+    text-align: right;
+    font-size: 0.75rem;
+
+    span {
+      margin-left: 0.5rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 @media (max-width: $sm) {
@@ -153,6 +169,10 @@ footer {
 
     .mobile-contact-container {
       display: block;
+    }
+
+    .author {
+      padding-top: 5rem;
     }
   }
 }

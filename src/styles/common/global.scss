@@ -39,6 +39,11 @@ main {
 }
 
 @media (max-width: $xs) {
+  body {
+    margin: 0;
+    padding: 4rem 0 0 0;
+  }
+
   .padding-wrapper {
     padding: 0 1rem;
   }

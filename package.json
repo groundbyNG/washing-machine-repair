@@ -1,5 +1,5 @@
 {
-  "name": "gulp-template",
+  "name": "washing-machine-repair",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -12,8 +12,7 @@
     "eslint-fix": "eslint ./src/js/** --fix"
   },
   "keywords": [],
-  "author": "Denys Vykhrystiuk",
-  "license": "ISC",
+  "author": "Nikita Gaponov",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
