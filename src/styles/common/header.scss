@@ -1,5 +1,9 @@
 @import "../mixins/media";
 
+$header-buttons: 2;
+$anchor-sm-position: 24;
+$anchor-xs-position: 11;
+
 header {
   height: calc(100vh - 4rem);
 
@@ -42,7 +46,7 @@ header {
   }
 
   .header__title {
-    margin: 13rem 0 15rem 0;
+    padding: 11rem 0;
     width: 34rem;
     color: $white;
 
@@ -86,7 +90,7 @@ header {
     }
 
     span {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: bold;
     }
   }
@@ -128,11 +132,118 @@ header {
 
       p {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       span {
-        font-size: 0.8rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  header {
+    .header__title {
+      padding: 7rem 0;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  header {
+    nav {
+      margin-right: 5rem;
+    }
+
+    .header__title {
+      padding: 9rem 0;
+
+      h1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin-bottom: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .phone-anchor {
+      display: none;
+    }
+
+    .header__anchor {
+      padding: 1rem 3rem;
+
+      &::after {
+        height: 2.5rem;
+      }
+    }
+
+    .cards {
+      .cards__element {
+        p {
+          font-size: 1rem;
+        }
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .header__title {
+      width: auto;
+    }
+
+    .phone-anchor {
+      display: block;
+    }
+
+    .header__anchor {
+      bottom: #{$anchor-sm-position}rem;
+    }
+
+    @for $i from 1 through $header-buttons {
+      .header__anchor:nth-of-type(#{$i + 1}) {
+        bottom: #{$anchor-sm-position - (5 * $i)}rem;
+      }
+    }
+
+    .cards {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  header {
+    &::before {
+      background-image: url("../img/main-mobile.jpg");
+    }
+
+    .header__title {
+      padding: 0;
+    }
+
+
+    .header__anchor {
+      bottom: #{$anchor-xs-position}rem;
+    }
+
+    @for $i from 1 through $header-buttons {
+      .header__anchor:nth-of-type(#{$i + 1}) {
+        bottom: #{$anchor-xs-position - (5 * $i)}rem;
       }
     }
   }

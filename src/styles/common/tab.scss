@@ -173,3 +173,15 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .tabs {
+    padding-bottom: 25rem;
+  }
+}
+
+@media (max-width: $xs) {
+  .tabs {
+    padding-bottom: 35rem;
+  }
+}

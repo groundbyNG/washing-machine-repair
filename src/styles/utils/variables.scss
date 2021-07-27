@@ -1,8 +1,9 @@
 /* Responsive breakpoints */
-$lg: 1920px;
-$md: 1366px;
-$sm: 768px;
-$xs: 360px;
+$xl: 1920px;
+$lg: 1600px;
+$md: 1367px;
+$sm: 769px;
+$xs: 450px;
 
 /* colors */
 $white: #ffffff;
@@ -26,7 +27,7 @@ $indicator-height: 4px;
 /* breakpoints */
 $breakpoints: (
   medium: #{$tab-count*250px},
-  small: #{$tab-count*150px}
+  small: #{$tab-count*250px}
 );
 
 /* selectors relative to radio inputs */
