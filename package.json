@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
+    "poststart": "npm prune --production",
     "start": "gulp start",
     "build": "gulp build",
     "lighthouse": "gulp build && gulp lighthouse",
